@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "DB2Notion",
+  "version": "1.0",
+  "description": "从豆瓣抓取信息并导入到Notion中",
+  "author": "Daniel Chen",
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "scripting", "https://api.notion.com/*"],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "web_accessible_resources": ["inject.js"]
+}
